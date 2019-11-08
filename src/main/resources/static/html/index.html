@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Rock, Paper, Scissor</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" language="javascript" src="js/gameBoard.js"></script>
+	<script type="text/javascript" language="javascript" src="js/utils.js"></script>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body bgcolor = ghostwhite >
+	<div id = "gameMode">
+		<div id = "message" >Select a Mode to Start the Game</div>
+		<div>
+			<input id = "player_Mode" type="button" class="button" value="Player Mode" onclick="showPlayerModeMessage()">
+			<input id = "computer_Mode" type="button" class="button" value="Computer Mode" onclick="showComputerModeMessage()">
+		</div>
+	</div>
+	
+	<div id = "gameContainer">
+	
+		<div id = "resultContainer">....</div>
+	
+		<div id = "player1Container">
+			<div id = "player1Obj">
+				<img id = "p1obj" src="../images/SCISSOR.png" />
+				<div id = "player1Title">Player One</div>
+			</div>
+			
+			<div id = "player1Options" style = "display:none">
+				<img id = "rock" src="../images/ROCK.png" onclick="getPlayerModeResult(event)"/>
+				<img id = "paper" src="../images/PAPER.png" onclick="getPlayerModeResult(event)"/>
+				<img id = "scissor" src="../images/SCISSOR.png" onclick="getPlayerModeResult(event)"/>
+			</div>
+		</div>
+		
+		<div id = "computerModePlay" >
+				<input id = "computerModePlayButton" type="button" class="button" value="Play" onclick="getComputerModeResult()" style = "display:none">
+		</div>
+		
+		<div id = "player2Container">
+			<div id = "player2Obj">
+				<img id = "p2obj" src="../images/SCISSOR.png" />
+				<div id = "player2Title">Player Two</div>
+			</div>
+		</div>
+	
+	</div>
+	
+</body>
+</html>

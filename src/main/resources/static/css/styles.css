@@ -1,0 +1,118 @@
+/*apply font universally*/
+* {
+ font-size: 1.2vw;
+ font-family: Verdana;
+}
+
+#resultContainer {
+	font-size: 1.5vw !important;
+}
+
+#player1Container {
+	position: absolute;
+	width: 27%;
+	margin-left: 15%;
+}
+
+#player1Title {
+	width: 460%;
+    margin-left: 67%;
+    margin-top: 85%;
+}
+
+#player2Title {
+	width: 460%;
+    margin-left: 67%;
+    margin-top: 85%;
+}
+
+#player2Container {
+	position: absolute;
+	width: 27%;
+	margin-left: 49%;
+}
+
+#player2Obj {
+	width: 11%;
+    height: 22%;
+    #position: absolute;
+    #margin-left: 57%;
+    #margin-top: 12%;
+}
+
+#p1Obj {
+	width: 550%;
+    height: auto;
+}
+
+#player1Obj {
+	width: 11%;
+    height: 22%;
+    #position: absolute;
+    #margin-left: 20%;
+    #margin-top: 12%;
+}
+
+#p2Obj {
+	width: 550%;
+    height: auto;
+}
+
+
+#computerModePlay{
+	position: absolute;
+    margin-left: 37%;
+    margin-top: 8%;
+    width: 20%;
+}
+
+#gameMode {
+	margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#gameContainer {
+	margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+
+#player1Options {
+	position : absolute;
+	margin-top: 10%;
+}
+.positionAbs {
+	position : absolute;
+}
+
+.positionRel {
+	position : relative;
+}
+
+.button {
+  background-color: #68b55f; 
+  border: none;
+  color: white;
+  padding: 1% 4%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 28%;
+  margin-top: 4%;
+  border-radius: 4px;
+}
+
+#rock, #paper, #scissor {
+	
+    height: 75px;
+}
+
+#rock:hover, #paper:hover, #scissor:hover {
+  transform: scale(1.5); 
+}
