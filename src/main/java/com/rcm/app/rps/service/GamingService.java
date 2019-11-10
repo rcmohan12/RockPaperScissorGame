@@ -18,7 +18,7 @@ public interface GamingService {
 	 * the computer object and game result
 	 * @throws Exception
 	 */
-	void getPlayerModeResult(ResultModel res) throws Exception; 
+	ResultModel getPlayerModeResult(ResultModel res) throws Exception; 
 	
 	/**
 	 * Get outcome of game when in computer mode
@@ -27,6 +27,6 @@ public interface GamingService {
 	 * @param res
 	 * @throws Exception
 	 */
-	void getComputerModeResult(ResultModel res) throws Exception; 
+	ResultModel getComputerModeResult(ResultModel res) throws Exception; 
 	
 }

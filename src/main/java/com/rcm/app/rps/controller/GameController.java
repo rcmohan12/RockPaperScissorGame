@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class GameController {
 
+	/**
+	 * Method to return the main game page
+	 * @param model
+	 * @return
+	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String showWelcomePage(ModelMap model) {
-		return "html/index.html";
+		return "html/game.html";
 	}
 
 }

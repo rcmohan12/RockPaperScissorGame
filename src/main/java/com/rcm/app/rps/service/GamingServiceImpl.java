@@ -17,8 +17,12 @@ import com.rcm.app.rps.utils.GameUtils.Obj;
 public class GamingServiceImpl implements GamingService{
 	private static final Logger LOGGER = LoggerFactory.getLogger(GamingServiceImpl.class);
 	
+	/**
+	 * This method returns the result of a player mode game where the computer mode result
+	 * is determined by using a randomly generated number
+	 */
 	@Override
-	public void getPlayerModeResult(ResultModel res) throws Exception{
+	public ResultModel getPlayerModeResult(ResultModel res) throws Exception{
 		LOGGER.info("getPlayerModeResult : START");
 		
 		Obj p1 = Obj.valueOf(res.getPlayerOneObj());
@@ -27,10 +31,16 @@ public class GamingServiceImpl implements GamingService{
 		GameUtils.returnResult(p1, p2, res);
 		
 		LOGGER.info("getPlayerModeResult : END");
+		return res;
+		
 	}
 	
+	/**
+	 * This method returns the result of a computer mode game where both user objects are
+	 * determined by using randomly generated numbers
+	 */
 	@Override
-	public void getComputerModeResult(ResultModel res) throws Exception{
+	public ResultModel getComputerModeResult(ResultModel res) throws Exception{
 		LOGGER.info("getComputerModeResult : START");
 		
 		Obj p1 = GameUtils.getObject();
@@ -40,6 +50,7 @@ public class GamingServiceImpl implements GamingService{
 		GameUtils.returnResult(p1, p2, res);
 		
 		LOGGER.info("getComputerModeResult : ENDED");
+		return res;
 	}
 
 }

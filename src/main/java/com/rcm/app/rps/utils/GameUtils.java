@@ -12,36 +12,48 @@ public class GameUtils {
 	
 	private static Random numGenerator = new Random();
 	
-	private static String PLAYER_ONE_WINS = "Player 1 wins";
+	private static final String PLAYER_ONE_WINS = "Player 1 wins";
 	
-	private static String PLAYER_TWO_WINS = "Player 2 wins";
+	private static final String PLAYER_TWO_WINS = "Player 2 wins";
 	
-	private static String DRAW = "DRAW";
+	private static final String DRAW = "DRAW";
 	
-	static Obj obj;
+	
 	
 	public enum Obj {
 		ROCK, PAPER, SCISSOR
 	}
 	
+	/**
+	 * This method is used to return an ENUM (ROCK,PAPER,SCISSOR) based on random selection
+	 * @return
+	 */
 	public static Obj getObject() {
 		LOGGER.info("getObject : START");
 		
 		int randomNumber = numGenerator.nextInt(300);
 
 		if(randomNumber < 100) {
-			obj = Obj.ROCK;
+			LOGGER.info("getObject : END");
+			return Obj.ROCK;
 		} else if (randomNumber > 99 && randomNumber < 200) {
-			obj = Obj.PAPER;
+			LOGGER.info("getObject : END");
+			return Obj.PAPER;
 		} else {
-			obj = Obj.SCISSOR;
+			LOGGER.info("getObject : END");
+			return Obj.SCISSOR;
 		}
 		
-		LOGGER.info("getObject : END");
-		return obj;
 	}
 	
-	
+	/**
+	 * 
+	 * This method compares the two players' objects and return winner details
+	 * 
+	 * @param p1 : player mode object (either user selected or computer generated depending on the game mode)
+	 * @param p2 : player 2 object always computer generated
+	 * @param res : String val indicating the winner of the game
+	 */
 	public static void returnResult(Obj p1, Obj p2, ResultModel res) {
 		LOGGER.info("returnResult : START");
 		
