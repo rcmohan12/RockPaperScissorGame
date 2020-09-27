@@ -15,4 +15,16 @@ This application has two modes of play
 1. User vs Computer (Player Mode)
 2. Computer vs Computer (Computer Mode)
 
-<img src ="images/playground.PNG" height = "500px" width = "650px"></img>
+<img src ="images/playground.PNG"></img>
+
+# Player Mode 
+
+User is always Player 1 and is required to choose Rock, Paper or Scissor to play the game
+
+<img src ="images/playerMode.PNG"></img>
+
+# Computer Mode 
+
+In player mode, click the play button to play the game. 
+
+<img src ="images/computerMode.PNG"></img>
