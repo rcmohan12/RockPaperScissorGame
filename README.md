@@ -15,5 +15,4 @@ This application has two modes of play
 1. User vs Computer (Player Mode)
 2. Computer vs Computer (Computer Mode)
 
-!
-
+<img src ="images/playground.PNG" height = "500px" width = "650px"></img>
