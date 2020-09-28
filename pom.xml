@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.rcm.app</groupId>
 	<artifactId>rps</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>RockPaperScissor</name>
 	<description>Demo project for Spring Boot</description>
